@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Spinnaker&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,10 +27,56 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+#heroText{
+  font-family: "Spinnaker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Define the base styles for the underline */
+.text-underline {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+
+.text-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust this value to position the underline */
+  left: 0;
+  width: 0; /* Start with width 0 */
+  height: 2px; /* Height of the underline */
+  background-color: transparent; /* Initial color (will animate to greenish-yellow) */
+  transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Define hover effect to change underline color and expand width */
+.text-underline:hover::after {
+  width: 100%; /* Expand width to 100% */
+  background-color: #C5E1A5; /* Greenish yellow color */
+}
+
+
+@media (max-width: 375px) {
+  #searchbox {
+    padding-left: 8px; /* Reduce left padding */
+    padding-right: 8px; /* Reduce right padding */
+  }
+}
+@media (max-width: 360px) {
+  #searchbox {
+    padding-left: 4px; /* Reduce left padding */
+    padding-right: 4px; /* Reduce right padding */
   }
 }
