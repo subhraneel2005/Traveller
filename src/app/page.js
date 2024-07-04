@@ -1,4 +1,5 @@
 import Destinations from "@/components/Destinations";
+import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import TravelDeals from "@/components/TravelDeals";
@@ -10,6 +11,7 @@ export default function Home() {
       <HomePage/>
       <Destinations/>
       <TravelDeals/>
+      <Footer/>
     </div>
   );
 }
