@@ -37,7 +37,7 @@
         },
         {
           id: 6,
-          name: 'Island Getaway',
+          name: 'Island Gateway',
           description: 'Discover the beauty and tranquility of our exclusive island getaways.',
           image: '/img6.jpg',
           about: 'Island Getaway offers secluded and picturesque islands where you can escape from the world and immerse yourself in natural beauty. Experience luxurious resorts, private beaches, and crystal-clear waters perfect for swimming and snorkeling. Enjoy spa treatments, gourmet dining, and romantic sunset cruises. This destination is perfect for couples and anyone looking to relax and rejuvenate in a paradise-like setting.'

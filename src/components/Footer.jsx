@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="mb-4 md:mb-0">
           <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
           <ul className="flex flex-col md:flex-row gap-4">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">Destinations</a></li>
+            <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/destinations" className="hover:underline">Destinations</a></li>
             <li><a href="/aboutus" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><a href="/contacts" className="hover:underline">Contact</a></li>
           </ul>
         </div>
 

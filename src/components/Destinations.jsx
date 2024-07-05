@@ -16,7 +16,7 @@ function Destinations() {
           />
         </div>
         <div className="flex flex-col items-center md:items-start gap-4">
-          <label className="text-sky-100 mb-1 text-lg">Number of Adults</label>
+          <label className="text-sky-100 mb-1 text-lg">Number of Persons</label>
           <input 
             type="number" 
             min="1" 

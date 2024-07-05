@@ -88,7 +88,7 @@ const AboutUs = () => {
               <li><a href="/" className="hover:underline">Home</a></li>
               <li><a href="/destinations" className="hover:underline">Destinations</a></li>
               <li><a href="/aboutus" className="hover:underline">About Us</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
+              <li><a href="/contacts" className="hover:underline">Contact</a></li>
             </ul>
           </div>
 
