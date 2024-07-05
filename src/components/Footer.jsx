@@ -10,7 +10,7 @@ const Footer = () => {
           <ul className="flex flex-col md:flex-row gap-4">
             <li><a href="#" className="hover:underline">Home</a></li>
             <li><a href="#" className="hover:underline">Destinations</a></li>
-            <li><a href="#" className="hover:underline">About Us</a></li>
+            <li><a href="/aboutus" className="hover:underline">About Us</a></li>
             <li><a href="#" className="hover:underline">Contact</a></li>
           </ul>
         </div>
