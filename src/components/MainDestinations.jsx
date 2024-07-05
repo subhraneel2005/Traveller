@@ -1,6 +1,22 @@
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 const MainDestinations = () => {
+  const router = useRouter();
+
+  const destinations = [
+    { id: 1, name: 'Tropical Paradise', description: 'Enjoy the sun, sand, and sea at our top beach destinations.', image: '/destination1.jpg' },
+    { id: 2, name: 'Cultural Escape', description: 'Immerse yourself in the rich history and culture of our destinations.', image: '/img21.jpg' },
+    { id: 3, name: 'Urban Adventure', description: 'Explore the vibrant nightlife and attractions of our city destinations.', image: '/img3.jpeg' },
+    { id: 4, name: 'Mountain Retreat', description: 'Relax and rejuvenate in our peaceful mountain retreats.', image: '/img4.jpg' },
+    { id: 5, name: 'Desert Safari', description: 'Experience the thrill of a desert safari in our exotic locations.', image: '/img51.jpg' },
+    { id: 6, name: 'Island Getaway', description: 'Discover the beauty and tranquility of our exclusive island getaways.', image: '/img6.jpg' },
+  ];
+
+  const handleLearnMore = (id) => {
+    router.push(`/destinations/${id}`);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-300 p-8">
       {/* Hero Section */}
@@ -20,33 +36,16 @@ const MainDestinations = () => {
 
       {/* Destinations Highlights Section */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        {/* Destination 1 */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="/destination1.jpg" alt="Destination 1" className="w-full h-40 object-cover"/>
-          <div className="p-4">
-            <h3 className="text-xl font-semibold">Tropical Paradise</h3>
-            <p className="text-gray-600 mt-2">Enjoy the sun, sand, and sea at our top beach destinations.</p>
-            <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Learn More</button>
+        {destinations.map(destination => (
+          <div key={destination.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src={destination.image} alt={destination.name} className="w-full h-40 object-cover"/>
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">{destination.name}</h3>
+              <p className="text-gray-600 mt-2">{destination.description}</p>
+              <button onClick={() => handleLearnMore(destination.id)} className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Learn More</button>
+            </div>
           </div>
-        </div>
-        {/* Destination 2 */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="/detination2.jpg" alt="Destination 2" className="w-full h-40 object-cover"/>
-          <div className="p-4">
-            <h3 className="text-xl font-semibold">Cultural Escape</h3>
-            <p className="text-gray-600 mt-2">Immerse yourself in the rich history and culture of our destinations.</p>
-            <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Learn More</button>
-          </div>
-        </div>
-        {/* Destination 3 */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="/destination3.jpeg" alt="Destination 3" className="w-full h-40 object-cover"/>
-          <div className="p-4">
-            <h3 className="text-xl font-semibold">Urban Adventure</h3>
-            <p className="text-gray-600 mt-2">Explore the vibrant nightlife and attractions of our city destinations.</p>
-            <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Learn More</button>
-          </div>
-        </div>
+        ))}
       </div>
 
       {/* Placeholder for Booking Section */}
@@ -72,7 +71,7 @@ const MainDestinations = () => {
               <li><a href="/" className="hover:underline">Home</a></li>
               <li><a href="/destinations" className="hover:underline">Destinations</a></li>
               <li><a href="/aboutus" className="hover:underline">About Us</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
+              <li><a href="/contacts" className="hover:underline">Contact</a></li>
             </ul>
           </div>
 
@@ -86,6 +85,6 @@ const MainDestinations = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default MainDestinations;
