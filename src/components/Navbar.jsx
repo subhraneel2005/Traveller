@@ -9,8 +9,8 @@ function Navbar() {
       <div className="md:flex gap-6 hidden">
         <Link href="/" className="text-gray-100 text-underline font-bold text-[16px]">Home</Link>
         <Link href="/aboutus" className="text-gray-100 text-underline font-bold text-[16px]">About Us</Link>
-        <Link href="/" className="text-gray-100 text-underline font-bold text-[16px]">Destinations</Link>
-        <Link href="/" className="text-gray-100 text-underline font-bold text-[16px]">Bookings</Link>
+        <Link href="/destinations" className="text-gray-100 text-underline font-bold text-[16px]">Destinations</Link>
+        <Link href="/contacts" className="text-gray-100 text-underline font-bold text-[16px]">Contact</Link>
       </div>
     </div>
   );
