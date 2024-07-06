@@ -108,7 +108,7 @@ export default function DestinationID({params}){
                 currency: "usd"
               }}
             >
-              <Checkout amount={destination.amount}/>
+              <Checkout amount={destination.amount} name={destination.name} image={destination.image}/>
             </Elements>
   
           </div>
