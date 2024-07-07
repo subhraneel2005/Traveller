@@ -9,7 +9,7 @@ function TravelDeals() {
           <img src="/i1.jpg" alt="Travel Deal 1" className="w-full h-40 object-cover"/>
           <div className="p-4">
             <h3 className="text-2xl font-semibold text-blue-900">Explore the Beaches of Bali</h3>
-            <p className="text-gray-600 mt-2">Experience the serene beauty of Bali's beaches with our exclusive package. Enjoy sunbathing, water sports, and luxurious stays.</p>
+            <p className="text-gray-600 mt-2">Experience the serene beauty of Balis beaches with our exclusive package. Enjoy sunbathing, water sports, and luxurious stays.</p>
             <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
           </div>
         </div>
