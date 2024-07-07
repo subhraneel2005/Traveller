@@ -48,7 +48,7 @@ function Checkout({amount, name, image}) {
             elements,
             clientSecret,
             confirmParams:{
-                return_url: `http://www.localhost:3000/payment-success?amount=${amount}&name=${name}&image=${image}`
+                return_url: `https://traveller-sooty.vercel.app/payment-success?amount=${amount}&name=${name}&image=${image}`
             },
         });
 
