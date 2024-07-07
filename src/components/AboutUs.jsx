@@ -26,7 +26,7 @@ const AboutUs = () => {
         <div className="flex-1 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl text-blue-900 font-semibold mb-6">Our Mission</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
-            Our mission is to make travel accessible and enjoyable for everyone. We strive to offer the best travel packages, guides, and tips to help you make the most of your adventures. Whether you're planning a family vacation, a solo trip, or a romantic getaway, we're here to assist you every step of the way.
+            Our mission is to make travel accessible and enjoyable for everyone. We strive to offer the best travel packages, guides, and tips to help you make the most of your adventures. Whether you are planning a family vacation, a solo trip, or a romantic getaway, we are here to assist you every step of the way.
           </p>
         </div>
       </div>

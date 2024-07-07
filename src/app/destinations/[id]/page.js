@@ -22,7 +22,7 @@ if(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY === undefined){
           name: 'Tropical Paradise',
           description: 'Enjoy the sun, sand, and sea at our top beach destinations.',
           image: '/destination1.jpg',
-          about: 'Tropical Paradise offers an idyllic escape with pristine beaches, clear blue waters, and a relaxed atmosphere perfect for unwinding and enjoying nature. This destination is ideal for sunbathing, swimming, and exploring coral reefs. With luxurious resorts and beachfront bars, you’ll experience ultimate relaxation. Whether you prefer adventurous water sports or lazy days in a hammock, Tropical Paradise has it all.',
+          about: 'Tropical Paradise offers an idyllic escape with pristine beaches, clear blue waters, and a relaxed atmosphere perfect for unwinding and enjoying nature. This destination is ideal for sunbathing, swimming, and exploring coral reefs. With luxurious resorts and beachfront bars, you will experience ultimate relaxation. Whether you prefer adventurous water sports or lazy days in a hammock, Tropical Paradise has it all.',
           amount: 12000
         },
         {
